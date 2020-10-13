@@ -1,0 +1,30 @@
+version: "3.4"
+services:
+  mock_serv:
+    build: ./mock_serv
+    image: mock_serv:latest
+    container_name: mock_serv
+    restart: always
+    ports:
+      - "8090:8090"
+  db_mysql:
+    image: mysql:latest
+    container_name: db_mysql 
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: test_task
+       MYSQL_USER: test_task
+       MYSQL_PASSWORD: test_task 
+  elastic:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2  
+    container_name: elastic
+    restart: always
+    ports:
+      - "9300:9200"
+    environment:
+      - discovery.type=single-node
+
+
