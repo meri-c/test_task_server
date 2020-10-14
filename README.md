@@ -7,15 +7,13 @@
 1. Load the project test_task_serv.
 2. Make sure 2300, 8080, 8090 and 3307 ports are free.
 3. Open mock_serv project.
-4. Build a jar file with 
+4. Build a jar file with: 
 
-
-    gradlew build
+    gradlew build kjhkjh
     
 *output jar you can find in the .build/libs folder*
 
-5. In folder where mock_serv folder and docker-compose.yml are, run
-
+5. In folder where mock_serv folder and docker-compose.yml are, run:
 
     docker-compose up -build -d
     
