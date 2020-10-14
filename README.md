@@ -11,7 +11,6 @@
 
     gradlew build
 
-*output jar you can find in the .build/libs folder
 5. In folder where mock_serv folder and docker-compose.yml are, run 
 
     docker-compose up -build -d
