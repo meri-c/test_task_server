@@ -12,10 +12,6 @@ public class MockController {
     @PostMapping(value = "/first", produces = MediaType.APPLICATION_XML_VALUE)
     public String first(@RequestBody String filter){
 
-        //parse the filter
-        //find data elsewhere
-        //return the xml result;
-
         String result = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
                 "<pricing>\n" +
                 "    <quote term=\"12\">\n" +
@@ -36,10 +32,6 @@ public class MockController {
 
     @PostMapping(value = "/second", produces = MediaType.APPLICATION_JSON_VALUE)
     public String second(@RequestBody String filter){
-
-        //parse the filter
-        //find data elsewhere
-        //return the json result;
 
         String result = "[\n" +
                 "  {\n" +
