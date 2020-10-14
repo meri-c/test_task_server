@@ -9,7 +9,7 @@
 3. Open mock_serv project.
 4. Build a jar file with: 
 
-    gradlew build kjhkjh
+    gradlew build
     
 *output jar you can find in the .build/libs folder*
 
